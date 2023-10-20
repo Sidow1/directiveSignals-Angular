@@ -11,7 +11,12 @@
     </div>
 
     <div class="col-auto">
-      <span customLabel [color]="color">Texto temporal</span>
+      <span
+        customLabel
+        [color]="color"
+        [errors]="myForm.controls['name'].errors"
+        >Texto temporal</span
+      >
     </div>
   </div>
 
